@@ -13,14 +13,14 @@ architecture tb of reg_tb is
     signal rst                           : std_logic;
     signal input, output                 : std_logic_vector(WIDTH-1 downto 0);
 begin
-    DUT : entity work.reg_sync_rst -- change entity here!
+    DUT : entity work.reg -- change entity here!
         generic map (
             WIDTH  => WIDTH)
         port map (
             clk    => clk,
             rst    => rst,
-            input  => input,
-            output => output
+            din  => input,
+            dout => output
             );
     
     clk <= not clk after 5 ns;

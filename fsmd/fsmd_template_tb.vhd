@@ -11,7 +11,7 @@ architecture tb of fsmd_template_tb is
     signal output : std_logic_vector(3 downto 0);
 begin
 
-    DUT : entity work.fsmd_template
+    DUT : entity work.fsmd
         port map (
             clk    => clk,
             rst    => rst,

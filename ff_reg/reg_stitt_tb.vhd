@@ -26,14 +26,14 @@ architecture random_tb of reg_stitt_tb is
     
 begin
     
-    DUT : entity work.reg_async_rst
+    DUT : entity work.reg
         generic map (
             WIDTH  => WIDTH)
         port map (
             clk    => clk,
             rst    => rst,
-            input  => input,
-            output => output
+            din  => input,
+            dout => output
             );
 
     -- Generate a 100 MHz clock. We gate the clock because the simulation

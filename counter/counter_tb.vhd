@@ -14,7 +14,7 @@ architecture tb of counter_tb is
 begin
     -- Change the architecture to test the different implementations and
     -- different max_values
-    DUT : entity work.counter4bit
+    DUT : entity work.counter
         port map (
             clk    => clk,
             rst    => rst,
